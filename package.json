@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "dev": "node app"
+    "dev": "nodemon main"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/dfc150385/day-02/issues"
   },
-  "homepage": "https://github.com/dfc150385/day-02#readme"
+  "homepage": "https://github.com/dfc150385/day-02#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

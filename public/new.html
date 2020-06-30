@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>宠物新增</title>
+  </head>
+  <body>
+    <ul>
+      <li><input type="text" id="name" placeholder="请输入宠物名字" /></li>
+      <li>
+        <input type="text" id="skills" placeholder="请输入宠物技能" />
+      </li>
+      <li><button id="btnSave">保存</button></li>
+    </ul>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#btnSave").click(function () {
+          if ($("#name").val() && $("#skills").val()) {
+            $.post(
+              "/api/v1/pets",
+              {
+                name: $("#name").val(),
+                skills: $("#skills").val(),
+              },
+              function (data, textStatus, jqXHR) {
+                window.location.href = "/index.html";
+              }
+            );
+          } else {
+            alert("请输入内容");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
