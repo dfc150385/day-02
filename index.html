@@ -5,5 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      //   console.log(NaN == NaN);
+      //   console.log(typeof NaN);
+      //   var a = ["This", "is", "baidu", "Campus"];
+      //   alert(a.join(""));
+
+      //   var fo = "get-element-by-id";
+      function foo(msg) {
+        var arr = msg.split("-");
+        console.log(arr);
+        for (var i = 0; i < arr.length; i++) {
+          // substr() 方法可在字符串中抽取从start下标开始的指定数目的字符。
+          arr[i] =
+            arr[i].charAt(0).toUpperCase() +
+            arr[i].substr(1, arr[i].length - 1);
+        }
+        msg = arr.join("");
+        return msg;
+      }
+      console.log(foo("get-element-by-id"));
+      // console.log(msg);
+    </script>
+  </body>
 </html>

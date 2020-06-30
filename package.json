@@ -1,0 +1,21 @@
+{
+  "name": "day02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfc150385/day-02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfc150385/day-02/issues"
+  },
+  "homepage": "https://github.com/dfc150385/day-02#readme"
+}
